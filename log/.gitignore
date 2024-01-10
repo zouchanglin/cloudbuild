@@ -1,0 +1,4 @@
+gunicorn.pid
+access.log
+debug.log
+info.log
