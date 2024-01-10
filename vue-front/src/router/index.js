@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/pages/Home'
 import AutoQA from '@/pages/AutoQA.vue'
+import NotFound from '@/pages/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,12 @@ const routes = [
         children: [
             { path: '/qa', component: AutoQA }
         ]
+    },
+    {
+        // 404
+        path: '*',
+        name: 'NotFound',
+        component: NotFound
     }
 ]
 
